@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcDifdatahora</title>
+</head>
+<body onload="Carregar()">
+    <h1>Calculo de diferença de datas e hora: </h1> <!--Só o Titulo-->
+    <h2 id="IdTempoAtual">Data e Hora Atual: </h2> <!--Saida de dodos-->
+    
+    <h3>Tempo Inicial:</h3>
+    <h4>Caixa de Data / Caixa de Hora / Caixa de Segundos / Caixa de Milésimos</h4>
+    <input type="date" id="idCxDataIni" value="2021-06-01">
+    <input type="time" id="idCxHoraIni" value="12:00"> <strong>:</strong>
+    <input type="number" min="00" max="59" value="0" id="idCxSegIni"> <strong>:</strong>
+    <input type="number" min="0000" max="9999" value="0" id="idCxMilIni">
+
+    <h3>Tempo Final:</h3>
+    <h4>Caixa de Data / Caixa de Hora / Caixa de Segundos / Caixa de Milésimos</h4>
+    <input type="date" id="idCxDataFin" value="2021-06-05">
+    <input type="time" id="idCxHoraFin" value="13:00"> <strong>:</strong>
+    <input type="number" min="0" max="59" value="0" id="idCxSegFin"> <strong>:</strong>
+    <input type="number" min="0" max="9999" value="0" id="idCxMilFin">
+
+    </br>
+    </br>
+    
+    <input type="button" value="Mostra" onclick="Mostar()">
+    <h3 id="idResposta">Resposta:</h3>
+
+
+
+
+    <script src="sprict.js"></script>
+    <script src="moment.js"></script>
+</body>
+</html>
